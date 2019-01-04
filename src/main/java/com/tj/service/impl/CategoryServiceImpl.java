@@ -1,5 +1,6 @@
 package com.tj.service.impl;
 
+import com.google.common.collect.Sets;
 import com.tj.common.ServerResponse;
 import com.tj.dao.CategoryMapper;
 import com.tj.pojo.Category;
@@ -8,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class CategoryServiceImpl implements ICategoryService {
@@ -70,15 +71,36 @@ public class CategoryServiceImpl implements ICategoryService {
             return ServerResponse.serverResponseByError("类别id不能为空");
         }
         //需要进行递归查询
-        return null;
+        Set<Category> categories = new HashSet<>();
+        //使用set集合可以自动去重
+        Set<Category> allChildCategory = findAllChildCategory(categories, categoryId);
+        //遍历这个集合，将id取出来放入一个新的set集合中，返回id的集合
+        HashSet<Integer> categoryIds = new HashSet<>();
+        //用迭代器进行遍历
+        Iterator<Category> iterator = categories.iterator();
+        while (iterator.hasNext()){
+            Category category = iterator.next();
+            categoryIds.add(category.getId());
+        }
+        return ServerResponse.serverResponseBySuccess(categoryIds);
     }
+
+
     //定义一个递归查询的方法
-    public List<Category> findAllChildCategory(List<Category> categories,Integer categoryId){
+    public Set<Category> findAllChildCategory(Set<Category> categories,Integer categoryId){
         Category category = categoryMapper.selectByPrimaryKey(categoryId);
         if(categories!=null){
-            categories.add(category);
+            categories.add(category);//通过id判断是否相等，需要重写hash和equals
         }
-        return null;
+        //查找categoryId下的子节点（平级）
+        List<Category> childCategory = categoryMapper.findChildCategory(categoryId);
+        if(childCategory!=null&&childCategory.size()!=0){
+            for(Category category1:childCategory){
+               findAllChildCategory(categories,category1.getId());
+            }
+        }
+
+        return categories;
 
     }
 
