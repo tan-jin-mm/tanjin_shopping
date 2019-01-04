@@ -1,0 +1,52 @@
+<web-app
+        version="3.0"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+<!--加载spring配置文件-->
+<context-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>classpath:spring.xml</param-value>
+</context-param>
+  <context-param>
+    <param-name>spring.profiles.active</param-name>
+    <param-value>dev</param-value>
+  </context-param>
+  <context-param>
+    <param-name>spring.profiles.default</param-name>
+    <param-value>dev</param-value>
+  </context-param>
+  <context-param>
+    <param-name>spring.liveBeansView.mbeanDomain</param-name>
+    <param-value>dev</param-value>
+  </context-param>
+
+<!--监听器用来加载全局文件-->
+<listener>
+  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+
+<!-- 配置SpringMVC前端控制器 -->
+<servlet>
+  <servlet-name>dispatcherServlet</servlet-name>
+  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  <!-- 指定SpringMVC配置文件 -->
+  <!-- SpringMVC的配置文件的默认路径是/WEB-INF/${servlet-name}-servlet.xml -->
+  <init-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>classpath:springmvc.xml</param-value>
+  </init-param>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>dispatcherServlet</servlet-name>
+  <!-- 设置所有的请求进入SpringMVC -->
+  <url-pattern>/</url-pattern>
+</servlet-mapping>
+<!--
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+</web-app>
+-->
+</web-app>
