@@ -47,4 +47,5 @@ public interface CategoryMapper {
      * 获取品类子节点（平级）
      */
     List<Category> findChildCategory(Integer categoryId);
+
 }

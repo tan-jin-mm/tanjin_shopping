@@ -1,6 +1,9 @@
 package com.tj.dao;
 
+import com.tj.pojo.Category;
 import com.tj.pojo.Product;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface ProductMapper {
@@ -43,4 +46,14 @@ public interface ProductMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Product record);
+    /*
+    * 更新商品状态
+    * */
+    int updateProductKeySelective(Product product);
+    /*
+    * 通过productId或者productName查询商品
+    * */
+    List<Product> findProductByProductIdAndProductName(@Param(value = "productId")Integer productId,
+                                                       @Param(value="productName") String productName);
+
 }
