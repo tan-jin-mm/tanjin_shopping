@@ -5,6 +5,7 @@ import com.tj.pojo.Product;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Set;
 
 public interface ProductMapper {
     /**
@@ -53,7 +54,11 @@ public interface ProductMapper {
     /*
     * 通过productId或者productName查询商品
     * */
-    List<Product> findProductByProductIdAndProductName(@Param(value = "productId")Integer productId,
-                                                       @Param(value="productName") String productName);
+    List<Product> findProductByProductIdAndProductName(@Param("productId")Integer productId,
+                                                       @Param("productName") String productName);
+    /*
+    * 通过类别id或者keyword查询商品
+    * */
+    List<Product> searchProduct(@Param("categoryIdList") Set<Integer> categoryIdList,@Param("keyWord") String keyWord);
 
 }

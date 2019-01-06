@@ -5,7 +5,7 @@ package com.tj.common;
 public class ResponseCode {
 
     //成功的状态码
-    public static final int SUCCESS=0;
+    /*public static final int SUCCESS=0;*/
     //失败状态码
-    public static final int ERROR=100;
+    /*public static final int ERROR=100;*/
 }

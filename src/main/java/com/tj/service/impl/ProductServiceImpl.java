@@ -3,6 +3,7 @@ package com.tj.service.impl;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.tj.common.Const;
 import com.tj.common.ServerResponse;
 import com.tj.dao.CategoryMapper;
 import com.tj.dao.ProductMapper;
@@ -28,6 +29,8 @@ public class ProductServiceImpl implements IProductService {
     protected ProductMapper productMapper;
     @Autowired
     private CategoryMapper categoryMapper;
+    @Autowired
+    private CategoryServiceImpl categoryService;
 
     @Override
     public ServerResponse saveOrUpdate(Product product) {
@@ -154,6 +157,78 @@ public class ProductServiceImpl implements IProductService {
             e.printStackTrace();
         }
         return null;
+    }
+
+    @Override
+    public ServerResponse detail_postal(Integer productId) {
+        if(productId==null){
+            return ServerResponse.serverResponseByError("商品id参数不能为空");
+        }
+        Product product = productMapper.selectByPrimaryKey(productId);
+        if(product==null){
+            return ServerResponse.serverResponseByError("商品不存在");
+        }
+        //判断商品状态是否在售
+        if(product.getStatus()!= Const.ProductEnum.PRODUCT_ONLINT.getCode()){
+            return ServerResponse.serverResponseByError("商品已下架或者删除");
+        }
+        ProductDetailVO productDetailVO = assembleProductDetailVO(product);
+        return ServerResponse.serverResponseBySuccess(productDetailVO);
+    }
+
+    @Override
+    public ServerResponse list_postal(Integer categoryId, String keyword, Integer pageNum, Integer pageSize, String orderBy) {
+        //1、categoryId和keyWord不能同时为空
+        if(categoryId==null&&(keyword==null||"".equals(keyword))){
+            return ServerResponse.serverResponseByError("参数错误");
+        }
+        //2、categoryId不为空，查询该类下的商品
+        Set<Integer> categoryIdList = new HashSet<>();
+        if(categoryId!=null){
+            Category category = categoryMapper.selectByPrimaryKey(categoryId);
+            //如果查询结果为空，并且keyword也没传，说明只按类别查询，该类别下无商品，但是也要按分页格式进行显示
+            if(category==null&&(keyword==null||"".equals(keyword))){
+                PageHelper.startPage(pageNum,pageSize);
+                //传一个空集合到前台
+                List<ProductListVO> productListVOS = new ArrayList<>();
+                PageInfo pageInfo = new PageInfo(productListVOS);
+                return ServerResponse.serverResponseBySuccess(pageInfo);
+            }
+            //如果category不为空，查询该类id及所有后代id
+            ServerResponse deep_category = categoryService.get_deep_category(categoryId);
+            if(deep_category.isSuccess()){
+                //查询到结果，得到其中的数据categoryIdList
+                categoryIdList = (Set<Integer>)deep_category.getData();
+            }
+        }
+        //3、如果keyword不为空，模糊查询
+        if(keyword!=null&&"".equals(keyword)){
+            keyword = "%"+keyword+"%";
+        }
+        //在正式查询之前先要调用分页插件，所以先判断orderBy是否为空
+        if ("".equals(orderBy)) {
+            PageHelper.startPage(pageNum,pageSize);
+        }else {
+            //orderBy命名规则字段_order
+            String[] orderByArr = orderBy.split("_");
+            if(orderByArr.length>1){
+                PageHelper.startPage(pageNum,pageSize,orderByArr[0]+" "+orderByArr[1]);
+            }else {
+                PageHelper.startPage(pageNum,pageSize);
+            }
+        }
+        List<Product> products = productMapper.searchProduct(categoryIdList, keyword);
+       //将products转为VO显示在前台
+        ArrayList<ProductListVO> productListVOS = new ArrayList<>();
+        if(products!=null&&products.size()>0){
+            for(Product product:products){
+                ProductListVO productListVO = assembleProductListVO(product);
+                productListVOS.add(productListVO);
+            }
+        }
+        //分页返回
+        PageInfo pageInfo = new PageInfo(productListVOS);
+        return ServerResponse.serverResponseBySuccess(pageInfo);
     }
 
     //定义一个方法，将product转为productDetalVO

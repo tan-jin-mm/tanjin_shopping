@@ -75,9 +75,9 @@ public class CategoryServiceImpl implements ICategoryService {
         //使用set集合可以自动去重
         Set<Category> allChildCategory = findAllChildCategory(categories, categoryId);
         //遍历这个集合，将id取出来放入一个新的set集合中，返回id的集合
-        HashSet<Integer> categoryIds = new HashSet<>();
+        Set<Integer> categoryIds = new HashSet<>();
         //用迭代器进行遍历
-        Iterator<Category> iterator = categories.iterator();
+        Iterator<Category> iterator = allChildCategory.iterator();
         while (iterator.hasNext()){
             Category category = iterator.next();
             categoryIds.add(category.getId());

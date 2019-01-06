@@ -43,27 +43,27 @@ public class ServerResponse<T> {
      * 调用接口成功时回调
      * */
     public static ServerResponse serverResponseBySuccess(){
-        return new ServerResponse(ResponseCode.SUCCESS);
+        return new ServerResponse(Const.RESPONSECODE_SUCCESS);
     }
     public static ServerResponse serverResponseBySuccess(String msg){
-        return new ServerResponse(ResponseCode.SUCCESS,msg);
+        return new ServerResponse(Const.RESPONSECODE_SUCCESS,msg);
     }
 
     public static <T>ServerResponse serverResponseBySuccess(T data){
-        return new ServerResponse(ResponseCode.SUCCESS,data);
+        return new ServerResponse(Const.RESPONSECODE_SUCCESS,data);
     }
 
     public static <T>ServerResponse serverResponseBySuccess(T data,String msg){
-        return new ServerResponse(ResponseCode.SUCCESS,data,msg);
+        return new ServerResponse(Const.RESPONSECODE_SUCCESS,data,msg);
     }
     /**
      * 接口调用失败时回调
      * */
     public static ServerResponse serverResponseByError(){
-        return new ServerResponse(ResponseCode.ERROR);
+        return new ServerResponse(Const.RESPONSECODE_ERROR);
     }
     public static ServerResponse serverResponseByError(String msg){
-        return new ServerResponse(ResponseCode.ERROR,msg);
+        return new ServerResponse(Const.RESPONSECODE_ERROR,msg);
     }
     public static ServerResponse serverResponseByError(int status){
         return new ServerResponse(status);
@@ -109,7 +109,7 @@ public class ServerResponse<T> {
      * */
     @JsonIgnore
     public boolean isSuccess(){
-        return this.status==ResponseCode.SUCCESS;
+        return this.status==Const.RESPONSECODE_SUCCESS;
     }
 
 
