@@ -1,6 +1,8 @@
 package com.tj.dao;
 
 import com.tj.pojo.Shipping;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface ShippingMapper {
@@ -43,4 +45,13 @@ public interface ShippingMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Shipping record);
+    /*
+    * 删除地址（防止横向越权，用userId和shippingId组合）
+    * */
+    int deleteByUserIdAndShippingId(@Param("userId") Integer userId,
+                                    @Param("shipping")Integer shipping);
+    /*
+    * 更新地址表
+    * */
+    int updateBySelectiveKey(Shipping shipping);
 }

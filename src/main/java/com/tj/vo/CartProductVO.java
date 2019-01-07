@@ -6,18 +6,21 @@ import java.math.BigDecimal;
 public class CartProductVO implements Serializable {
     private Integer id;
     private Integer userId;
+    private Integer quantity;
+    private Integer productChecked;
     //来自商品信息
     private Integer productId;
-    private Integer quantity;
     private String productName;
     private String productSubtitle;
     private String productMainImage;
     private BigDecimal productPrice;
     private Integer productStatus;
     private Integer productStock;
-    private BigDecimal productTotalPrice;
-    private Integer productChecked;
+
+    //做库存判断
     private String limitQuantity;//显示库存够不够，有货或者缺货
+    //做计算
+    private BigDecimal productTotalPrice;
 
     public Integer getId() {
         return id;

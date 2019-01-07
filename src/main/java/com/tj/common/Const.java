@@ -96,4 +96,68 @@ public class Const {
             this.desc = desc;
         }
     }
+    //为购物车的选择状态设置
+    public enum CartCheckEnum{
+
+        CART_CHECK_ENUM(1,"已勾选"),
+        CART_UNCHECK_ENUM(0,"未勾选")
+        ;
+        private int code;
+        private String desc;
+
+        CartCheckEnum(int code, String desc) {
+            this.code = code;
+            this.desc = desc;
+        }
+
+        public int getCode() {
+            return code;
+        }
+
+        public void setCode(int code) {
+            this.code = code;
+        }
+
+        public String getDesc() {
+            return desc;
+        }
+
+        public void setDesc(String desc) {
+            this.desc = desc;
+        }
+    }
+    //设置订单状态
+    public enum OrderStatusEnum{
+
+       /* ORDER__ENUM(0,"已取消"),
+        ORDER__ENUM(10,"未付款"),
+        ORDER__ENUM(20,"已付款"),
+        ORDER__ENUM(40,"已发货"),
+        ORDER__ENUM(50,"交易成功"),
+        ORDER__ENUM(60,"已取消")*/
+        ;
+        private int code;
+        private String desc;
+
+        OrderStatusEnum(int code, String desc) {
+            this.code = code;
+            this.desc = desc;
+        }
+
+        public int getCode() {
+            return code;
+        }
+
+        public void setCode(int code) {
+            this.code = code;
+        }
+
+        public String getDesc() {
+            return desc;
+        }
+
+        public void setDesc(String desc) {
+            this.desc = desc;
+        }
+    }
 }

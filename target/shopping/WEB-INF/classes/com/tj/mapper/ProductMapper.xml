@@ -131,4 +131,23 @@
       </if>
     </where>
   </select>
+  <!--
+      categoryIdList是集合，需要循环查询，keyWord是模糊查询
+  -->
+  <select id="searchProduct" parameterType="map" resultMap="BaseResultMap">
+    select id, category_id, name, subtitle, main_image, price, stock, status, create_time,
+    update_time, sub_image, detail
+    from tj_product
+    <where>
+      <if test="categoryIdList!=null and categoryIdList.size>0">
+        and category_id in
+        <foreach collection="categoryIdList" item="categoryId" open="(" close=")" separator=",">
+          #{categoryId}
+        </foreach>
+      </if>
+      <if test="keyWord!=null">
+        and name like #{keyword}
+      </if>
+    </where>
+  </select>
 </mapper>
