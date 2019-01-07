@@ -76,4 +76,8 @@ public interface CartMapper {
     * 统计购物车的数量
     * */
     Integer get_cart_product_count(Integer userId);
+    /*
+    * 查询购物车中已选中的商品
+    * */
+    List<Cart> findCartListByUserIdAndCheck(Integer userId);
 }
