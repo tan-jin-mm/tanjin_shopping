@@ -80,4 +80,9 @@ public interface CartMapper {
     * 查询购物车中已选中的商品
     * */
     List<Cart> findCartListByUserIdAndCheck(Integer userId);
+    /*
+    * 批量删除购物车商品
+    * */
+    int batchDelete(List<Cart> cartList);
+
 }

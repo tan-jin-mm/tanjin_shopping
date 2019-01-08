@@ -21,8 +21,8 @@ public class PropertiesUtils {
     }
     public static final String IMAGE_HOST = imageHost;
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         System.out.println(IMAGE_HOST);
-    }
+    }*/
 
 }

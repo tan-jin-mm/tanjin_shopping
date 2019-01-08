@@ -43,7 +43,7 @@
       #{shippingId,jdbcType=INTEGER}, #{payment,jdbcType=DECIMAL}, #{paymentType,jdbcType=INTEGER}, 
       #{postage,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, #{paymentTime,jdbcType=TIMESTAMP}, 
       #{sendTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP}, #{closeTime,jdbcType=TIMESTAMP}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+      now(), now())
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.tj.pojo.Order">
     <!--
@@ -62,8 +62,7 @@
       send_time = #{sendTime,jdbcType=TIMESTAMP},
       end_time = #{endTime,jdbcType=TIMESTAMP},
       close_time = #{closeTime,jdbcType=TIMESTAMP},
-      create_time = #{createTime,jdbcType=TIMESTAMP},
-      update_time = #{updateTime,jdbcType=TIMESTAMP}
+      update_time = now()
     where id = #{id,jdbcType=INTEGER}
   </update>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
@@ -84,5 +83,32 @@
     select id, order_no, user_id, shipping_id, payment, payment_type, postage, status, 
     payment_time, send_time, end_time, close_time, create_time, update_time
     from tj_order
+  </select>
+  <!--
+      根据userId和orderNo查询订单
+  -->
+  <select id="findOrderByUserIdAndOrderNo" parameterType="map" resultMap="BaseResultMap">
+    select id, order_no, user_id, shipping_id, payment, payment_type, postage, status,
+    payment_time, send_time, end_time, close_time, create_time, update_time
+    from tj_order
+    where user_id=#{userId} and order_no=#{orderNo}
+  </select>
+  <!--
+      按照用户ID查询订单
+  -->
+  <select id="findOrderByUserId" parameterType="int" resultMap="BaseResultMap">
+    select id, order_no, user_id, shipping_id, payment, payment_type, postage, status,
+    payment_time, send_time, end_time, close_time, create_time, update_time
+    from tj_order
+    where user_id=#{userId}
+  </select>
+  <!--
+    根据订单号查询
+  -->
+  <select id="findOrderByOrderNo" parameterType="long" resultMap="BaseResultMap">
+    select id, order_no, user_id, shipping_id, payment, payment_type, postage, status,
+    payment_time, send_time, end_time, close_time, create_time, update_time
+    from tj_order
+    where order_no=#{orderNo}
   </select>
 </mapper>

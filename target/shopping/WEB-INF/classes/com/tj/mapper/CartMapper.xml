@@ -123,4 +123,24 @@
     from tj_cart
     where user_id=#{userId}
   </select>
+  <!--
+    查询购物车中已选中的商品
+  -->
+  <select id="findCartListByUserIdAndCheck" parameterType="int" resultMap="BaseResultMap">
+    select id, user_id, product_id, quantity, checked, create_time, update_time
+     from tj_cart
+     where user_id=#{userId} and checked=1
+  </select>
+  <!--
+      批量删除购物车商品
+  -->
+  <delete id="batchDelete" parameterType="list">
+    delete from tj_cart
+    <where>
+      id in
+      <foreach collection="list" item="cart" separator="," open="(" close=")">
+        #{cart.id}
+      </foreach>
+    </where>
+  </delete>
 </mapper>

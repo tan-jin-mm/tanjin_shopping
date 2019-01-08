@@ -9,12 +9,20 @@ public interface IOrderService {
      * */
     ServerResponse create(Integer userId,Integer shippingId);
     /*
-    * 获取订单的商品信息
+    * 获取购物车的商品信息
     * */
-    ServerResponse get_order_cart_product(Integer userId, Integer shippingId);
+    ServerResponse get_order_cart_product(Integer userId);
     /*
     * 订单List
     * */
-    ServerResponse list(Integer shippingId);
+    ServerResponse list(Integer userId,Integer pageNum,Integer pageSize);
+    /*
+    * 取消订单
+    * */
+    ServerResponse cancel(Integer userId, Long orderNo);
+    /*
+    * 订单详情
+    * */
+    ServerResponse detail(Long orderNo);
 
 }

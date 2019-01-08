@@ -26,6 +26,7 @@ public class AddressServiceImpl implements IAddressService {
         shipping.setUserId(userId);
         shippingMapper.insert(shipping);
         Map<String,Integer> map = new HashMap<>();
+        map.put("shippingId",shipping.getId());
         return ServerResponse.serverResponseBySuccess(map);
     }
 

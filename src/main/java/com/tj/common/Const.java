@@ -159,6 +159,15 @@ public class Const {
         public void setDesc(String desc) {
             this.desc = desc;
         }
+        //遍历枚举类
+        public static OrderStatusEnum codeOf(Integer code){
+            for(OrderStatusEnum orderStatusEnum:values()){
+                if(code == orderStatusEnum.getCode()){
+                    return orderStatusEnum;
+                }
+            }
+            return null;
+        }
     }
     //为购物车的选择状态设置
     public enum PaymentEnum{
@@ -187,6 +196,15 @@ public class Const {
 
         public void setDesc(String desc) {
             this.desc = desc;
+        }
+        //遍历枚举类
+        public static PaymentEnum codeOf(Integer code){
+            for(PaymentEnum paymentEnum:values()){
+                if(code == paymentEnum.getCode()){
+                    return paymentEnum;
+                }
+            }
+            return null;
         }
     }
 }

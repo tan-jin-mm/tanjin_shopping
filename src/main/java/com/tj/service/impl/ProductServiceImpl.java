@@ -47,6 +47,7 @@ public class ProductServiceImpl implements IProductService {
         //通过id判断是添加还是更新
         if(product.getId()==null){
             //没有id就是添加新商品
+            product.setStatus(Const.ProductEnum.PRODUCT_ONLINT.getCode());
             int result = productMapper.insert(product);
             if(result>0){
                 return ServerResponse.serverResponseBySuccess();

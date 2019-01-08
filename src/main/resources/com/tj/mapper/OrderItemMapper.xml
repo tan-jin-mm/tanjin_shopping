@@ -40,6 +40,22 @@
       #{currentUnitPrice,jdbcType=DECIMAL}, #{quantity,jdbcType=INTEGER}, #{totlePrice,jdbcType=DECIMAL}, 
       #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
   </insert>
+  <!--
+      批量插入
+  -->
+  <insert id="insertBatch" parameterType="list">
+      insert into tj_order_item (user_id, order_no,
+      product_id, product_name, product_image,
+      current_unit_price, quantity, totle_price,
+      create_time, update_time)
+    values
+    <foreach collection="list" item="orderItem" separator=",">
+      ( #{orderItem.userId,jdbcType=INTEGER}, #{orderItem.orderNo,jdbcType=BIGINT},
+      #{orderItem.productId,jdbcType=INTEGER}, #{orderItem.productName,jdbcType=VARCHAR}, #{orderItem.productImage,jdbcType=VARCHAR},
+      #{orderItem.currentUnitPrice,jdbcType=DECIMAL}, #{orderItem.quantity,jdbcType=INTEGER}, #{orderItem.totlePrice,jdbcType=DECIMAL},
+      now(), now())
+    </foreach>
+  </insert>
   <update id="updateByPrimaryKey" parameterType="com.tj.pojo.OrderItem">
     <!--
       WARNING - @mbg.generated
@@ -76,5 +92,14 @@
     select id, user_id, order_no, product_id, product_name, product_image, current_unit_price, 
     quantity, totle_price, create_time, update_time
     from tj_order_item
+  </select>
+  <!--
+      根据订单号查询订单明细
+  -->
+  <select id="fintOrderItemByOrderNo" parameterType="long" resultMap="BaseResultMap">
+    select id, user_id, order_no, product_id, product_name, product_image, current_unit_price,
+    quantity, totle_price, create_time, update_time
+    from tj_order_item
+    where order_no=#{orderId}
   </select>
 </mapper>

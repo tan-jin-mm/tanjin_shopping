@@ -1,6 +1,8 @@
 package com.tj.dao;
 
 import com.tj.pojo.Order;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface OrderMapper {
@@ -43,4 +45,18 @@ public interface OrderMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Order record);
+    /*
+    * 根据userId和orderNo查询订单
+    * */
+    Order findOrderByUserIdAndOrderNo(@Param("userId") Integer userId,
+                                      @Param("orderNo") Long orderNo);
+
+    /*
+    * 按照用户ID查询订单
+    * */
+    List<Order> findOrderByUserId(Integer userId);
+    /*
+    * 根据订单号查询
+    * */
+    Order findOrderByOrderNo(Long orderNo);
 }
