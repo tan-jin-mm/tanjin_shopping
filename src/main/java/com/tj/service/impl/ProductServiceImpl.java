@@ -3,6 +3,7 @@ package com.tj.service.impl;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.google.common.collect.Lists;
 import com.tj.common.Const;
 import com.tj.common.ServerResponse;
 import com.tj.dao.CategoryMapper;
@@ -11,6 +12,7 @@ import com.tj.pojo.Category;
 import com.tj.pojo.Product;
 import com.tj.service.IProductService;
 import com.tj.utils.DateUtils;
+import com.tj.utils.FTPUtil;
 import com.tj.utils.PropertiesUtils;
 import com.tj.vo.ProductDetailVO;
 import com.tj.vo.ProductListVO;
@@ -149,10 +151,13 @@ public class ProductServiceImpl implements IProductService {
             //将multipartFile转为file
             multipartFile.transferTo(file1);
             //上传到ftp服务器。。。
+            FTPUtil.onloadFile(Lists.newArrayList(file1));
             //map<uri,url>,uri是文件名称，url是图片完整路径
             Map<String,String> map = new HashMap<>();
             map.put("uri",newName);
             map.put("url", PropertiesUtils.IMAGE_HOST  + newName);
+            //删除应用服务器上的文件
+            file1.delete();
             return ServerResponse.serverResponseBySuccess(map);
         } catch (IOException e) {
             e.printStackTrace();
@@ -203,8 +208,10 @@ public class ProductServiceImpl implements IProductService {
             }
         }
         //3、如果keyword不为空，模糊查询
-        if(keyword!=null&&"".equals(keyword)){
+        if(keyword!=null&&!"".equals(keyword)){
             keyword = "%"+keyword+"%";
+        }else {
+            keyword =null;
         }
         //在正式查询之前先要调用分页插件，所以先判断orderBy是否为空
         if ("".equals(orderBy)) {

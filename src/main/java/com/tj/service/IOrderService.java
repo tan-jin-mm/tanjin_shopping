@@ -2,6 +2,8 @@ package com.tj.service;
 
 import com.tj.common.ServerResponse;
 
+import java.util.Map;
+
 
 public interface IOrderService {
     /*
@@ -24,5 +26,17 @@ public interface IOrderService {
     * 订单详情
     * */
     ServerResponse detail(Long orderNo);
+    /*
+    * 支付接口
+    * */
+    ServerResponse pay(Integer userId,Long orderNo);
+    /*
+    * 支付宝回调
+    * */
+    ServerResponse alipay_callback(Map<String,String> map);
+    /*
+    * 查询订单支付状态
+    * */
+    ServerResponse query_order_pay_status(Long orderNo);
 
 }

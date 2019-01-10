@@ -5,6 +5,9 @@ public class Const {
     public static final int RESPONSECODE_SUCCESS=0;
     //失败状态码
     public static final int RESPONSECODE_ERROR=100;
+
+    //支付宝回调成功
+    public static final String TRADE_SUCCESS = "TRADE_SUCCESS";
     //定义一个当前用户的常量
     public static final String CURRENTUSER="current_user";
     //定以一个状态码
@@ -206,5 +209,43 @@ public class Const {
             }
             return null;
         }
+    }
+    //支付平台
+    public enum PaymentPlatFormEnum{
+
+        ALIPAY(1,"支付宝")
+        ;
+        private int code;
+        private String desc;
+
+        PaymentPlatFormEnum(int code, String desc) {
+            this.code = code;
+            this.desc = desc;
+        }
+
+        public int getCode() {
+            return code;
+        }
+
+        public void setCode(int code) {
+            this.code = code;
+        }
+
+        public String getDesc() {
+            return desc;
+        }
+
+        public void setDesc(String desc) {
+            this.desc = desc;
+        }
+        //遍历枚举类
+        /*public static PaymentEnum codeOf(Integer code){
+            for(PaymentEnum paymentEnum:values()){
+                if(code == paymentEnum.getCode()){
+                    return paymentEnum;
+                }
+            }
+            return null;
+        }*/
     }
 }

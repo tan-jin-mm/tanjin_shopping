@@ -59,6 +59,7 @@ public interface ProductMapper {
     /*
     * 通过类别id或者keyword查询商品
     * */
-    List<Product> searchProduct(@Param("categoryIdList") Set<Integer> categoryIdList,@Param("keyWord") String keyWord);
+    List<Product> searchProduct(@Param("categoryIdList") Set<Integer> categoryIdList,
+                                @Param("keyword") String keyword);
 
 }

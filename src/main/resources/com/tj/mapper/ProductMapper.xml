@@ -123,10 +123,10 @@
     update_time, sub_image, detail
     from tj_product
     <where>
-      <if test="id!=null">
+      <if test="productId!=null">
         and id = #{productId}
       </if>
-      <if test="">
+      <if test="productName!=null">
         and name like "%"#{productName}"%"
       </if>
     </where>
@@ -145,7 +145,7 @@
           #{categoryId}
         </foreach>
       </if>
-      <if test="keyWord!=null">
+      <if test="keyword!=null">
         and name like #{keyword}
       </if>
     </where>
