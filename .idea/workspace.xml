@@ -7,34 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3fa27bc-ca25-4af6-935a-54d0ff3701eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alipay/demo/trade/DemoHbRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/alipay/demo/trade/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/utils/FTPUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/zfbinfo.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/alipay-sdk-java-3.3.0-source.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/alipay-sdk-java-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/alipay-trade-sdk-20161215-source.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/alipay-trade-sdk-20161215.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/common/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/common/Const.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/dao/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/dao/ProductMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/pojo/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/pojo/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/pojo/PayInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/pojo/PayInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/utils/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/utils/PropertiesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderItemMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/PayInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/PayInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/ProductMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/dao/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/dao/OrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/service/impl/ProductServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/utils/PropertiesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/utils/PropertiesUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/OrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/service/impl/ProductServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/utils/PropertiesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/utils/PropertiesUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/common/Const$ResponseCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/common/Const$ResponseCodeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/common/Const$RoleEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/common/Const$RoleEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/common/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/common/Const.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/dao/ProductMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/dao/ProductMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/mapper/PayInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/mapper/PayInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/mapper/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const$ResponseCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const$ResponseCodeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const$RoleEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const$RoleEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/ProductMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/ProductMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/PayInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/PayInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/ProductMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,12 +52,13 @@
     <session id="-697692767">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
@@ -76,44 +67,44 @@
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="11" />
-          <entry key="java" value="219" />
+          <entry key="java" value="228" />
           <entry key="jsp" value="4" />
           <entry key="properties" value="19" />
-          <entry key="xml" value="72" />
+          <entry key="xml" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="11" />
-          <entry key="JAVA" value="219" />
+          <entry key="JAVA" value="228" />
           <entry key="JSP" value="4" />
           <entry key="Properties" value="19" />
-          <entry key="XML" value="72" />
+          <entry key="XML" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="22362" />
+          <entry key="java" value="22377" />
           <entry key="jsp" value="102" />
           <entry key="properties" value="162" />
-          <entry key="txt" value="31" />
-          <entry key="xml" value="2328" />
+          <entry key="txt" value="35" />
+          <entry key="xml" value="2340" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22362" />
+          <entry key="JAVA" value="22377" />
           <entry key="JSP" value="102" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PLAIN_TEXT" value="35" />
           <entry key="Properties" value="162" />
-          <entry key="SQL" value="70" />
-          <entry key="XML" value="2258" />
+          <entry key="SQL" value="72" />
+          <entry key="XML" value="2268" />
         </counts>
       </usages-collector>
     </session>
@@ -124,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="134" column="15" lean-forward="true" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="15" />
+              <caret line="134" column="15" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,19 +127,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="335">
-              <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="414" column="59" selection-start-line="414" selection-start-column="59" selection-end-line="414" selection-end-column="59" />
+              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,10 +136,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/common/Const.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2327">
-              <caret line="248" column="11" selection-start-line="241" selection-start-column="8" selection-end-line="248" selection-end-column="11" />
+            <state relative-caret-position="112">
+              <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="70" column="70" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderItemMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13">
+              <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="394" selection-start-line="394" selection-end-line="394" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/PayInfoMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="946">
+              <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/PayInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -186,8 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/CategoryMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/CategoryMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/vo/ProductListVO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/UserInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/backend/ProductManageController.java" />
@@ -221,7 +246,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/AddressServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/vo/CartOrderItemVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/OrderItemMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderItemMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/OrderMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/utils/PropertiesUtils.java" />
@@ -233,10 +257,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/ProductMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/common/Const.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/PayInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/pojo/PayInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/pojo/OrderItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderItemMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/PayInfoMapper.xml" />
       </list>
     </option>
   </component>
@@ -274,9 +301,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="184" />
+    <option name="x" value="183" />
     <option name="width" value="1518" />
-    <option name="height" value="1031" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -285,6 +312,8 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -387,6 +416,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tj" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tj" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -426,8 +465,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -634,7 +671,8 @@
       <workItem from="1546991692766" duration="3160000" />
       <workItem from="1547001275240" duration="10951000" />
       <workItem from="1547029199413" duration="5285000" />
-      <workItem from="1547078305125" duration="25104000" />
+      <workItem from="1547078305125" duration="25826000" />
+      <workItem from="1547117519171" duration="2289000" />
     </task>
     <task id="LOCAL-00001" summary="第三次提交">
       <created>1546654066570</created>
@@ -678,17 +716,23 @@
       <option name="project" value="LOCAL" />
       <updated>1546948014820</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="201900110">
+      <created>1547115694149</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547115694149</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222745000" />
+    <option name="totallyTimeSpent" value="225756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.24575587" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.27324173" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -698,7 +742,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3090586" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.669627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47069272" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -733,30 +777,10 @@
     <MESSAGE value="第四次提交" />
     <MESSAGE value="20190107" />
     <MESSAGE value="20190108" />
-    <option name="LAST_COMMIT_MESSAGE" value="20190108" />
+    <MESSAGE value="201900110" />
+    <option name="LAST_COMMIT_MESSAGE" value="201900110" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/utils/TokenCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/vo/ShippingVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/vo/OrderVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="125" column="5" lean-forward="true" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/CartMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -831,13 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="62" selection-start-line="42" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderItemMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -937,13 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/backend/ProductManageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -1000,20 +1010,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2050">
-          <caret line="22" column="81" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="104" selection-start-line="104" selection-end-line="104" />
-          <folding>
-            <element signature="e#2378#2379#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,13 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/PayInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1066,40 +1059,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/common/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2327">
-          <caret line="248" column="11" selection-start-line="241" selection-start-column="8" selection-end-line="248" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="134" column="15" lean-forward="true" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="15" />
+          <caret line="134" column="15" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/common/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4800">
+          <caret line="248" column="11" selection-start-line="241" selection-start-column="8" selection-end-line="248" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
-          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="313" column="24" selection-start-line="313" selection-start-column="24" selection-end-line="313" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="70" column="70" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="414" column="59" selection-start-line="414" selection-start-column="59" selection-end-line="414" selection-end-column="59" />
+        <state relative-caret-position="23">
+          <caret line="394" selection-start-line="394" selection-end-line="394" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/PayInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/PayInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
         </state>
       </provider>
     </entry>

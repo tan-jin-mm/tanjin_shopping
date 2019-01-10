@@ -169,7 +169,7 @@ public class OrderServiceImpl implements IOrderService {
             orderItemVO.setProductImage(orderItem.getProductImage());
             orderItemVO.setProductName(orderItem.getProductName());
             orderItemVO.setQuantity(orderItem.getQuantity());
-            orderItemVO.setTotalPrice(orderItem.getTotlePrice());
+            orderItemVO.setTotalPrice(orderItem.getTotalPrice());
         }
         return orderItemVO;
     }
@@ -202,7 +202,7 @@ public class OrderServiceImpl implements IOrderService {
     private BigDecimal getOrderTotalPrice(List<OrderItem> orderItems){
         BigDecimal orderTotalPrice = new BigDecimal("0");
        for(OrderItem orderItem:orderItems){
-           orderTotalPrice = BigDecimalUtils.add(orderTotalPrice.doubleValue(),orderItem.getTotlePrice().doubleValue());
+           orderTotalPrice = BigDecimalUtils.add(orderTotalPrice.doubleValue(),orderItem.getTotalPrice().doubleValue());
        }
        return orderTotalPrice;
     }
@@ -231,7 +231,7 @@ public class OrderServiceImpl implements IOrderService {
             orderItem.setProductImage(product.getMainImage());
             orderItem.setQuantity(cart.getQuantity());
             orderItem.setCurrentUnitPrice(product.getPrice());
-            orderItem.setTotlePrice(BigDecimalUtils.mul(product.getPrice().doubleValue(),cart.getQuantity().doubleValue()));
+            orderItem.setTotalPrice(BigDecimalUtils.mul(product.getPrice().doubleValue(),cart.getQuantity().doubleValue()));
             orderItems.add(orderItem);
         }
         return ServerResponse.serverResponseBySuccess(orderItems);
@@ -387,7 +387,7 @@ public class OrderServiceImpl implements IOrderService {
         }
         //保存支付信息
         PayInfo payInfo = new PayInfo();
-        payInfo.setOrserNo(orderNo);
+        payInfo.setOrderNo(orderNo);
         payInfo.setPayPlatform(Const.PaymentPlatFormEnum.ALIPAY.getCode());
         payInfo.setPlatformStatus(trade_status);
         payInfo.setPlatformNumber(trade_no);
