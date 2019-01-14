@@ -790,7 +790,7 @@ public class OrderServiceImpl implements IOrderService {
                 dumpResponse(response);
 
                 // 需要修改为运行机器上的路径
-                String filePath = String.format("C://FTPfile/qr-%s.png",
+                String filePath = String.format("/usr/tj/ftpTemp/qr-%s.png",
                         response.getOutTradeNo());
                 log.info("filePath:" + filePath);
                 ZxingUtils.getQRCodeImge(response.getQrCode(), 256, filePath);

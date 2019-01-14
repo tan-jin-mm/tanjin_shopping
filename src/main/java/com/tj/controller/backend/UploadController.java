@@ -22,7 +22,7 @@ public class UploadController {
     @RequestMapping(value = "/upload",method = RequestMethod.POST)
     @ResponseBody
     public ServerResponse upload(@RequestParam(value = "upload_file",required = false) MultipartFile multipartFile){
-        String path = "C:/FTPfile";
+        String path = "/usr/tj/ftpTemp";
         ServerResponse serverResponse = iProductService.upload(path,multipartFile);
         return serverResponse;
     }
