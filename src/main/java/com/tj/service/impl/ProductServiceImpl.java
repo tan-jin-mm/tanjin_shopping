@@ -1,6 +1,5 @@
 package com.tj.service.impl;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.google.common.collect.Lists;
@@ -14,6 +13,7 @@ import com.tj.service.IProductService;
 import com.tj.utils.DateUtils;
 import com.tj.utils.FTPUtil;
 import com.tj.utils.PropertiesUtils;
+/*import com.tj.vo.ProductDetailVO;*/
 import com.tj.vo.ProductDetailVO;
 import com.tj.vo.ProductListVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -99,6 +99,7 @@ public class ProductServiceImpl implements IProductService {
         ProductDetailVO productDetailVO = assembleProductDetailVO(product);
         return ServerResponse.serverResponseBySuccess(productDetailVO);
     }
+
     @Override
     public ServerResponse list(Integer pageNum, Integer pageSize) {
         //使用mybatis-pageHelper插件进行分页,在查询数据之前使用，实现原理是springAOP
@@ -138,10 +139,10 @@ public class ProductServiceImpl implements IProductService {
             return ServerResponse.serverResponseByError("没有选择文件");
         }
         String originalFilename = multipartFile.getOriginalFilename();
-        String exName = originalFilename.substring(originalFilename.indexOf("."));//扩展名
+        String exName = originalFilename.substring(originalFilename.lastIndexOf("."));//扩展名
         String newName = UUID.randomUUID().toString()+exName;
         File file = new File(path);
-        //若文件实例不存在，说明无此路径，一个该路径的文件夹
+        //若文件实例不存在，说明无此路径，new一个该路径的文件夹
         if(!file.exists()){
             file.setWritable(true);
             file.mkdir();
@@ -221,7 +222,9 @@ public class ProductServiceImpl implements IProductService {
             String[] orderByArr = orderBy.split("_");
             if(orderByArr.length>1){
                 PageHelper.startPage(pageNum,pageSize,orderByArr[0]+" "+orderByArr[1]);
-            }else {
+            }else if(orderByArr.length>2){
+                PageHelper.startPage(pageNum,pageSize,orderByArr[0]+"_"+orderByArr[1]+" "+orderByArr[2]);
+            } else {
                 PageHelper.startPage(pageNum,pageSize);
             }
         }

@@ -1,6 +1,5 @@
 package com.tj.service.impl;
 
-import com.google.common.collect.Sets;
 import com.tj.common.ServerResponse;
 import com.tj.dao.CategoryMapper;
 import com.tj.pojo.Category;
@@ -8,7 +7,6 @@ import com.tj.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.servlet.http.HttpSession;
 import java.util.*;
 
 @Service
@@ -74,6 +72,7 @@ public class CategoryServiceImpl implements ICategoryService {
         Set<Category> categories = new HashSet<>();
         //使用set集合可以自动去重
         Set<Category> allChildCategory = findAllChildCategory(categories, categoryId);
+
         //遍历这个集合，将id取出来放入一个新的set集合中，返回id的集合
         Set<Integer> categoryIds = new HashSet<>();
         //用迭代器进行遍历
@@ -99,9 +98,7 @@ public class CategoryServiceImpl implements ICategoryService {
                findAllChildCategory(categories,category1.getId());
             }
         }
-
         return categories;
-
     }
 
 }

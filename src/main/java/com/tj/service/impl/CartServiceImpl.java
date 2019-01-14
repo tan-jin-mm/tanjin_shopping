@@ -8,6 +8,7 @@ import com.tj.pojo.Cart;
 import com.tj.pojo.Product;
 import com.tj.service.ICartService;
 import com.tj.utils.BigDecimalUtils;
+/*import com.tj.vo.CartProductVO;*/
 import com.tj.vo.CartProductVO;
 import com.tj.vo.CartVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -154,13 +155,14 @@ public class CartServiceImpl implements ICartService {
                     //计算商品总价=单价*数量
                     cartProductVO.setProductTotalPrice(BigDecimalUtils.mul(product.getPrice().doubleValue(), Double.valueOf(cartProductVO.getQuantity())));
                 }
+                //3、计算购物车总价格
                 if(cartProductVO.getProductChecked()==Const.CartCheckEnum.CART_CHECK_ENUM.getCode()){
                     cartTotalPrice = BigDecimalUtils.add(cartTotalPrice.doubleValue(),cartProductVO.getProductTotalPrice().doubleValue());
                 }
                 cartProductVOList.add(cartProductVO);
             }
         }
-        //3、计算购物车总价格
+
         cartVO.setCartProductVOList(cartProductVOList);
         cartVO.setCartTotalPrice(cartTotalPrice);
         //4、判断购物车是否全选

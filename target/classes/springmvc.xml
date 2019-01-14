@@ -58,7 +58,6 @@
             <mvc:exclude-mapping path="/manage/user/login.do"/>
             <bean  class="com.tj.controller.common.intercepter.AuthorityInterceptor"></bean>
         </mvc:interceptor>
-
     </mvc:interceptors>-->
 
 

@@ -154,8 +154,6 @@ public class OrderServiceImpl implements IOrderService {
        return shippingVO;
     }
 
-
-
     /*
     * List<OrderItem>----->List<OrderItemVO>
     * */
@@ -196,9 +194,11 @@ public class OrderServiceImpl implements IOrderService {
             }
         }
     }
+
     /*
     * 计算订单总价格
     * */
+
     private BigDecimal getOrderTotalPrice(List<OrderItem> orderItems){
         BigDecimal orderTotalPrice = new BigDecimal("0");
        for(OrderItem orderItem:orderItems){
@@ -374,7 +374,7 @@ public class OrderServiceImpl implements IOrderService {
         if(order==null){
             return ServerResponse.serverResponseByError("订单"+orderNo+"不是本商品的订单");
         }
-        if(order.getStatus()>=Const.OrderStatusEnum.ORDER__PAYED.getCode()){
+        if(order.getStatus()==Const.OrderStatusEnum.ORDER__PAYED.getCode()){
             //防止支付宝重复回调
             return ServerResponse.serverResponseByError("支付宝重复调用");
         }
@@ -778,7 +778,7 @@ public class OrderServiceImpl implements IOrderService {
                 .setUndiscountableAmount(undiscountableAmount).setSellerId(sellerId).setBody(body)
                 .setOperatorId(operatorId).setStoreId(storeId).setExtendParams(extendParams)
                 .setTimeoutExpress(timeoutExpress)
-                .setNotifyUrl("http://2ifyi6.natappfree.cc/shopping/order/alipay_callback.do")//支付宝服务器主动通知商户服务器里指定的页面http路径,根据需要设置
+                .setNotifyUrl("http://39.98.94.211/shopping/order/alipay_callback.do")//支付宝服务器主动通知商户服务器里指定的页面http路径,根据需要设置
                 .setGoodsDetailList(goodsDetailList);
 
         AlipayF2FPrecreateResult result = tradeService.tradePrecreate(builder);
@@ -796,6 +796,7 @@ public class OrderServiceImpl implements IOrderService {
                 ZxingUtils.getQRCodeImge(response.getQrCode(), 256, filePath);
                 File file = new File(filePath);
                 FTPUtil.onloadFile(Lists.newArrayList(file));
+                file.delete();
                 Map map = new HashMap();
                 map.put("orderNo",order.getOrderNo());
                 map.put("qrCode",PropertiesUtils.IMAGE_HOST+"qr-"+response.getOutTradeNo()+".png");

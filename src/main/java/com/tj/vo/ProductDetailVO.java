@@ -9,7 +9,7 @@ public class ProductDetailVO implements Serializable {
     private Integer parentCategoryId;
     private String name;
     private String subtitle;
-    private String imageHost;//http://img.business.com/
+    private String imageHost;
     private String mainImage;
     private String subImage;//[\"business/aa.jpg/",\"business/bb.jpg/"\"business/cc.jpg/"]
     private String detail;//richtext

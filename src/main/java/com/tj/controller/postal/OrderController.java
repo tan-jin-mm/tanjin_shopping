@@ -106,7 +106,7 @@ public class OrderController {
         System.out.println("支付宝回调应用服务器接口");
         //拿到支付宝返回的参数
         Map<String, String[]> parameterMap = request.getParameterMap();
-        Map<String,String> requestMap = new HashMap<>();
+        Map<String,String> paramterValue = new HashMap<>();
         Iterator<String> iterator = parameterMap.keySet().iterator();
         while (iterator.hasNext()){
             String key = iterator.next();
@@ -115,12 +115,12 @@ public class OrderController {
             for(int i=0;i<strings.length;i++){
                 value= (i==strings.length-1)? value+strings[i]:value+strings[i]+",";
             }
-            requestMap.put(key,value);
+            paramterValue.put(key,value);
         }
         //支付宝验签
         try {
-            requestMap.remove("sign_type");
-            boolean result = AlipaySignature.rsaCheckV2(requestMap, Configs.getAlipayPublicKey(), "utf-8", Configs.getSignType());
+            paramterValue.remove("sign_type");
+            boolean result = AlipaySignature.rsaCheckV2(paramterValue, Configs.getAlipayPublicKey(), "utf-8", Configs.getSignType());
             if(!result){
                 return ServerResponse.serverResponseByError("非法请求，验证不通过");
             }
@@ -129,7 +129,7 @@ public class OrderController {
             e.printStackTrace();
         }
         //处理业务逻辑
-        return iOrderService.alipay_callback(requestMap);
+        return iOrderService.alipay_callback(paramterValue);
     }
     /*
      * 查询订单支付状态
