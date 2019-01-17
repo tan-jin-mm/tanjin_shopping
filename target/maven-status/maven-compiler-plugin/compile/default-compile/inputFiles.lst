@@ -30,7 +30,6 @@ C:\ideaworkspace\shopping\src\main\java\com\tj\pojo\Order.java
 C:\ideaworkspace\shopping\src\main\java\com\tj\controller\postal\AddressController.java
 C:\ideaworkspace\shopping\src\main\java\com\tj\controller\backend\UploadController.java
 C:\ideaworkspace\shopping\src\main\java\com\tj\dao\OrderMapper.java
-C:\ideaworkspace\shopping\src\main\java\com\tj\common\ResponseCode.java
 C:\ideaworkspace\shopping\src\main\java\com\tj\service\impl\CartServiceImpl.java
 C:\ideaworkspace\shopping\src\main\java\com\tj\service\impl\CategoryServiceImpl.java
 C:\ideaworkspace\shopping\src\main\java\com\tj\vo\ProductDetailVO.java

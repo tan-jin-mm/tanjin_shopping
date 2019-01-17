@@ -34,7 +34,6 @@ com\tj\service\IUserService.class
 com\tj\common\Const$ResponseCodeEnum.class
 com\tj\controller\backend\UserManageController.class
 com\tj\utils\TokenCache.class
-com\tj\common\ResponseCode.class
 com\tj\controller\backend\UploadController.class
 com\tj\controller\postal\OrderController.class
 com\tj\controller\backend\CategoryManageController.class
