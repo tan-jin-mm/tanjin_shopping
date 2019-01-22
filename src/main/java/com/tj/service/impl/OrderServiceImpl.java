@@ -45,6 +45,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.File;
 import java.io.IOException;
@@ -66,6 +67,8 @@ public class OrderServiceImpl implements IOrderService {
     private OrderMapper orderMapper;
     @Autowired
     private PayInfoMapper payInfoMapper;
+
+    @Transactional
     @Override
     public ServerResponse create(Integer userId, Integer shippingId) {
         if(shippingId==null){
@@ -414,6 +417,31 @@ public class OrderServiceImpl implements IOrderService {
         }
         return ServerResponse.serverResponseBySuccess(false);
     }
+    @Transactional
+    @Override
+    public void closeOrderByScheduled(String date) {
+        List<Order> orderList = orderMapper.findOrderByCreateTime(date, Const.OrderStatusEnum.ORDER__UN_PAY.getCode());
+        if(orderList!=null&&orderList.size()>0){
+            for(Order order:orderList){
+                List<OrderItem> orderItems = orderItemMapper.fintOrderItemByOrderNo(order.getOrderNo());
+                if(orderItems!=null&&orderItems.size()>0){
+                    for (OrderItem orderItem:orderItems){
+                        Integer stock = productMapper.findStockById(orderItem.getProductId());
+                        if(stock==null){
+                            continue;
+                        }
+                        Product product = new Product();
+                        product.setId(orderItem.getProductId());
+                        product.setStock(stock+orderItem.getQuantity());
+                        productMapper.updateProductKeySelective(product);
+                    }
+                }
+                order.setStatus(Const.OrderStatusEnum.ORDER__CLOSED.getCode());
+                order.setCloseTime(new Date());
+                orderMapper.updateByPrimaryKey(order);
+            }
+        }
+    }
 
     ////////////////////支付相关/////////////////////
     private static Log log = LogFactory.getLog(Main.class);
@@ -523,11 +551,9 @@ public class OrderServiceImpl implements IOrderService {
         posTradeInfoList.add(PosTradeInfo.newInstance(HbStatus.X, "1326", 15));
         posTradeInfoList.add(PosTradeInfo.newInstance(HbStatus.S, "1401", 8));
         posTradeInfoList.add(PosTradeInfo.newInstance(HbStatus.F, "1405", 3));
-
         // 填写异常信息，如果有的话
         List<ExceptionInfo> exceptionInfoList = new ArrayList<ExceptionInfo>();
         exceptionInfoList.add(ExceptionInfo.HE_PRINTER);
-
         // 填写扩展参数，如果有的话
         Map<String, Object> extendInfo = new HashMap<String, Object>();
         //        extendInfo.put("SHOP_ID", "BJ_ZZ_001");

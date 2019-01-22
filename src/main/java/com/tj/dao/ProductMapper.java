@@ -50,7 +50,7 @@ public interface ProductMapper {
     /*
     * 更新商品状态
     * */
-    int updateProductKeySelective(Product product);
+    Integer updateProductKeySelective(Product product);
     /*
     * 通过productId或者productName查询商品
     * */
@@ -61,5 +61,8 @@ public interface ProductMapper {
     * */
     List<Product> searchProduct(@Param("categoryIdList") Set<Integer> categoryIdList,
                                 @Param("keyword") String keyword);
-
+    /*
+    * 根据商品ID查库存
+    * */
+    Integer findStockById(Integer productId);
 }

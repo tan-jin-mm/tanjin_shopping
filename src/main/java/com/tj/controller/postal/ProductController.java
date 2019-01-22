@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 
 
 @RestController
-@RequestMapping(value = "/product")
+@RequestMapping(value = "/portal/product")
 public class ProductController {
     @Autowired
     private IProductService iProductService;

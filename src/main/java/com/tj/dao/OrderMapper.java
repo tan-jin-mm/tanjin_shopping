@@ -59,4 +59,9 @@ public interface OrderMapper {
     * 根据订单号查询
     * */
     Order findOrderByOrderNo(Long orderNo);
+    /*
+    * 根据订单创建时间查找未付款订单
+    * */
+    List<Order> findOrderByCreateTime(@Param("date") String date,
+                                      @Param("status") Integer status);
 }

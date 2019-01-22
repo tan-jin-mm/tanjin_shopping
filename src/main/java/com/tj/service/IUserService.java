@@ -46,4 +46,12 @@ public interface IUserService {
      */
     UserInfo findUserInfoByUserid(Integer userId);
 
+    /*
+     * 根据tocken查询用户信息
+     * */
+    UserInfo findUserInforByToken(String token);
+    /*
+    * 根据用户id修改token字段
+    * */
+    int updateTokenByUserId(Integer userId, String token);
 }

@@ -111,4 +111,14 @@
     from tj_order
     where order_no=#{orderNo}
   </select>
+  <!--
+    根据订单创建时间查找未付款订单
+  -->
+  <select id="findOrderByCreateTime" parameterType="map" resultMap="BaseResultMap">
+    select id, order_no, user_id, shipping_id, payment, payment_type, postage, status,
+    payment_time, send_time, end_time, close_time, create_time, update_time
+    from tj_order
+    where status = #{status} and create_time &lt;= #{date}
+  </select>
+
 </mapper>

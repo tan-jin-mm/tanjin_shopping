@@ -20,7 +20,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 @RestController
-@RequestMapping(value = "/order")
+@RequestMapping(value = "/portal/order")
 public class OrderController {
     @Autowired
     private IOrderService iOrderService;
@@ -56,9 +56,9 @@ public class OrderController {
                                @RequestParam(required = false,defaultValue = "1")Integer pageNum,
                                @RequestParam(required = false,defaultValue = "10") Integer pageSize){
         UserInfo userInfo = (UserInfo)session.getAttribute(Const.CURRENTUSER);
-        if(userInfo==null){
+        /*if(userInfo==null){
             return  ServerResponse.serverResponseByError(Const.ResponseCodeEnum.NEED_LOGIN.getCode(),Const.ResponseCodeEnum.NEED_LOGIN.getDesc());
-        }
+        }*/
         ServerResponse serverResponse = iOrderService.list(userInfo.getId(), pageNum,pageSize);
         return serverResponse;
     }
@@ -79,10 +79,10 @@ public class OrderController {
     * */
     @RequestMapping(value="/detail.do")
     public ServerResponse detail(HttpSession session,Long orderNo){
-        UserInfo userInfo = (UserInfo)session.getAttribute(Const.CURRENTUSER);
+        /*UserInfo userInfo = (UserInfo)session.getAttribute(Const.CURRENTUSER);
         if(userInfo==null){
             return  ServerResponse.serverResponseByError(Const.ResponseCodeEnum.NEED_LOGIN.getCode(),Const.ResponseCodeEnum.NEED_LOGIN.getDesc());
-        }
+        }*/
         ServerResponse serverResponse = iOrderService.detail(orderNo);
         return serverResponse;
     }

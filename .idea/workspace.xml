@@ -6,16 +6,79 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3fa27bc-ca25-4af6-935a-54d0ff3701eb" name="Default Changelist" comment="v2.0">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/AuthorityInterceptor.java" afterDir="false" />
+    <list default="true" id="e3fa27bc-ca25-4af6-935a-54d0ff3701eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/common/RedisPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/common/exception/ExceptionResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/BackendInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/PostalInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/common/scheduled/CloseOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tj/utils/RedisPoolUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/common/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/common/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/controller/backend/CategoryManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/backend/CategoryManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/controller/backend/UserManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/backend/UserManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/AuthorityInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/dao/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/dao/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/dao/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/dao/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/dao/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/dao/UserInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/pojo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/pojo/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/service/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tj/utils/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tj/utils/PropertiesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tj/mapper/UserInfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/controller/backend/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/controller/backend/UploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/controller/backend/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/controller/backend/UploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/common/Const$ResponseCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/common/Const$ResponseCodeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/common/Const$RoleEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/common/Const$RoleEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/common/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/common/Const.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/controller/backend/CategoryManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/controller/backend/CategoryManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/controller/backend/UserManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/controller/backend/UserManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/controller/postal/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/controller/postal/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/dao/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/dao/OrderMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/dao/ProductMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/dao/ProductMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/dao/UserInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/dao/UserInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/mapper/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/pojo/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/pojo/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tj/utils/PropertiesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tj/utils/PropertiesUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const$ResponseCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const$ResponseCodeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const$RoleEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const$RoleEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/common/Const.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/controller/backend/CategoryManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/controller/backend/CategoryManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/controller/backend/UserManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/controller/backend/UserManageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/controller/postal/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/controller/postal/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/OrderMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/ProductMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/ProductMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/UserInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/dao/UserInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/pojo/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/pojo/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/utils/PropertiesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/com/tj/utils/PropertiesUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/classes/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,61 +106,62 @@
     <session id="-697692767">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="29" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.20" value="4" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="2" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="3" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="13" />
-          <entry key="java" value="287" />
+          <entry key="class" value="24" />
+          <entry key="java" value="361" />
           <entry key="jsp" value="6" />
-          <entry key="properties" value="30" />
-          <entry key="xml" value="84" />
+          <entry key="properties" value="35" />
+          <entry key="xml" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="13" />
-          <entry key="JAVA" value="287" />
+          <entry key="CLASS" value="24" />
+          <entry key="JAVA" value="361" />
           <entry key="JSP" value="6" />
-          <entry key="Properties" value="30" />
-          <entry key="XML" value="84" />
+          <entry key="Properties" value="35" />
+          <entry key="XML" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="22471" />
+          <entry key="java" value="25646" />
           <entry key="jsp" value="102" />
-          <entry key="properties" value="167" />
+          <entry key="properties" value="290" />
           <entry key="txt" value="42" />
-          <entry key="xml" value="2340" />
+          <entry key="xml" value="2703" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22471" />
+          <entry key="JAVA" value="25646" />
           <entry key="JSP" value="102" />
           <entry key="PLAIN_TEXT" value="42" />
-          <entry key="Properties" value="167" />
+          <entry key="Properties" value="290" />
           <entry key="SQL" value="72" />
-          <entry key="XML" value="2268" />
+          <entry key="XML" value="2631" />
         </counts>
       </usages-collector>
     </session>
@@ -105,10 +169,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/common/RedisPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="781" column="53" selection-start-line="781" selection-start-column="53" selection-end-line="781" selection-end-column="53" />
+            <state relative-caret-position="250">
+              <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/utils/RedisPoolUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,60 +195,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="850">
+              <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="14" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="103" column="48" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/AuthorityInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/UserInfoMapper.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -196,57 +222,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/common/ServerResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/common/ResponseCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/IProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/utils/BigDecimalUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/vo/CartVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/pojo/Cart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/ICartService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/ShippingMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/ShippingMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/IAddressService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/utils/MD5Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/AddressController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/CartMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/vo/OrderItemVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/vo/ShippingVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/vo/OrderVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/AddressServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/vo/CartOrderItemVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/OrderItemMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/OrderMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/utils/PropertiesUtils.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/ProductMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/ProductMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/pojo/PayInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/pojo/OrderItem.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderItemMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/PayInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/common/Const.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/vo/ProductDetailVO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/utils/FTPUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/vo/CartProductVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/CartServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/backend/UploadController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/CartMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/pojo/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/UserInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/common/Const.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/backend/UserManageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/common/exception/ExceptionResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/backend/CategoryManageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/IUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/AuthorityInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/AddressController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/PostalInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/BackendInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/PostalInterceptor11.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/backend/ProductManageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/OrderMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/tj/mapper/ProductMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/dao/ProductMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/common/scheduled/CloseOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/controller/postal/UserController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/utils/PropertiesUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/utils/RedisPoolUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tj/common/RedisPool.java" />
       </list>
     </option>
   </component>
@@ -284,9 +310,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1631" />
+    <option name="x" value="237" />
+    <option name="y" value="393" />
+    <option name="width" value="1023" />
     <option name="height" value="708" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -295,6 +321,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -345,7 +372,80 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tj" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tj" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tj" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tj" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="postal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tj" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tj" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tj" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tj" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
@@ -357,13 +457,30 @@
             <path>
               <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -371,7 +488,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547689366371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548135573555" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/alipay-trade-sdk-20161215.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -403,7 +520,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat8.0.46">
+  <component name="RunManager" selected="Application.RedisPool">
     <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tj.utils.DateUtils" />
       <module name="shopping" />
@@ -449,6 +566,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tj.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tj.common.RedisPool" />
+      <module name="shopping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tj.common.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -535,9 +665,11 @@
       <item itemvalue="Application.DateUtils" />
       <item itemvalue="Application.PropertiesUtils" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.RedisPool" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RedisPool" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.PropertiesUtils" />
         <item itemvalue="Application.DateUtils" />
@@ -581,7 +713,13 @@
       <workItem from="1547462965689" duration="44000" />
       <workItem from="1547464806875" duration="1094000" />
       <workItem from="1547513460037" duration="3633000" />
-      <workItem from="1547689111778" duration="255000" />
+      <workItem from="1547689111778" duration="16768000" />
+      <workItem from="1547768850167" duration="18021000" />
+      <workItem from="1547808533000" duration="636000" />
+      <workItem from="1547812160208" duration="277000" />
+      <workItem from="1547860128668" duration="8545000" />
+      <workItem from="1548035670609" duration="13943000" />
+      <workItem from="1548128677950" duration="1308000" />
     </task>
     <task id="LOCAL-00001" summary="第三次提交">
       <created>1546654066570</created>
@@ -653,17 +791,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547436017493</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="v2.0">
+      <created>1547689412330</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1547689412330</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274635000" />
+    <option name="totallyTimeSpent" value="333878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.27647534" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.30072758" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -673,8 +818,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36056837" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39253998" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42628774" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39431617" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -713,251 +858,19 @@
     <MESSAGE value="v2.0" />
     <option name="LAST_COMMIT_MESSAGE" value="v2.0" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/PostalInterceptor.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/PayInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/common/ResponseCode.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/AddressServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/utils/TokenCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/common/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="110" column="35" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/backend/UserManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="32" column="61" lean-forward="true" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/common/ServerResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/maven/Repository/com/google/guava/guava/22.0/guava-22.0.jar!/com/google/common/collect/Lists.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4997">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/vo/ProductListVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/ProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="108" column="53" lean-forward="true" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/vo/ProductDetailVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/maven/Repository/joda-time/joda-time/2.3/joda-time-2.3.jar!/org/joda/time/DateTime.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12089">
-          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/utils/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/vo/OrderVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/backend/CategoryManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="70" column="7" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/vo/CartVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/vo/CartProductVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/utils/MD5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/vo/CartOrderItemVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/zfbinfo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/vo/OrderItemVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/utils/FTPUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="35" column="95" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/backend/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="63" column="67" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/dao/PayInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/dao/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/CartMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="109" column="24" lean-forward="true" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="143" column="33" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/CartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -981,13 +894,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="263" column="16" lean-forward="true" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/alipay/demo/trade/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1017,44 +923,312 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/UserInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/backend/UploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="103" column="48" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
+        <state relative-caret-position="210">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/dao/UserInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="781" column="53" selection-start-line="781" selection-start-column="53" selection-end-line="781" selection-end-column="53" />
+        <state relative-caret-position="510">
+          <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/utils/MD5Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1018">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/AddressServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/common/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/maven/Repository/org/springframework/spring-webmvc/4.2.0.RELEASE/spring-webmvc-4.2.0.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="455" selection-start-line="455" selection-end-line="455" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/maven/Repository/org/springframework/spring-web/4.2.0.RELEASE/spring-web-4.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/maven/Repository/org/springframework/spring-webmvc/4.2.0.RELEASE/spring-webmvc-4.2.0.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="468" selection-start-line="468" selection-end-line="468" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/maven/Repository/org/springframework/spring-webmvc/4.2.0.RELEASE/spring-webmvc-4.2.0.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/UserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="151" column="11" lean-forward="true" selection-start-line="151" selection-start-column="11" selection-end-line="151" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/common/exception/ExceptionResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="55" column="58" lean-forward="true" selection-start-line="52" selection-start-column="3" selection-end-line="55" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2525">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/BackendInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-529">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-625">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/backend/CategoryManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="47" column="69" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/backend/ProductManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/PostalInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/backend/UserManageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="184">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/dao/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="64" column="64" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/IOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/OrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/AddressController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/pojo/Shipping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2325">
+          <caret line="93" column="30" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/tj/mapper/ProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="153" column="15" lean-forward="true" selection-start-line="153" selection-start-column="6" selection-end-line="153" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/dao/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        <state relative-caret-position="-532">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/common/intercepter/AuthorityInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/postal/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="161">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/controller/common/scheduled/CloseOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="244" column="17" lean-forward="true" selection-start-line="244" selection-start-column="17" selection-end-line="244" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/maven/Repository/redis/clients/jedis/2.8.0/jedis-2.8.0.jar!/redis/clients/jedis/Jedis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="47" column="54" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/utils/PropertiesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2746">
+          <caret line="434" column="72" selection-start-line="434" selection-start-column="72" selection-end-line="434" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/maven/Repository/redis/clients/jedis/2.8.0/jedis-2.8.0.jar!/redis/clients/jedis/JedisPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/common/RedisPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tj/utils/RedisPoolUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

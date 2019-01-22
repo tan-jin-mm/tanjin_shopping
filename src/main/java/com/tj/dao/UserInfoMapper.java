@@ -82,6 +82,14 @@ public interface UserInfoMapper {
      */
     int updateUserBySelectActive(UserInfo userInfo);
 
-
+    /*
+    * 根据tocken查询用户信息
+    * */
+    UserInfo findUserInforByToken(String token);
+    /*
+     * 根据用户id修改token字段
+     * */
+    int updateTokenByUserId(@Param("userId")Integer userId,
+                            @Param("token") String token);
 
 }

@@ -150,4 +150,10 @@
       </if>
     </where>
   </select>
+  <!--
+      根据商品ID查库存
+  -->
+  <select id="findStockById" parameterType="int" resultMap="BaseResultMap">
+    select stock from from tj_product where id=#{productId} for update
+  </select>
 </mapper>

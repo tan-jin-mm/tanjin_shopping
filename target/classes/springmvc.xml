@@ -46,19 +46,32 @@
     </bean>
 
 
-    <!--<mvc:interceptors>
-        &lt;!&ndash;拦截所有请求&ndash;&gt;
+    <mvc:interceptors>
         <mvc:interceptor>
-            &lt;!&ndash;
-               /manage/a
-               /manage/b/login.do
-               /manage/order/create.do
-            &ndash;&gt;
+            <!--
+               后台拦截器
+            -->
             <mvc:mapping path="/manage/**"/>
             <mvc:exclude-mapping path="/manage/user/login.do"/>
-            <bean  class="com.tj.controller.common.intercepter.AuthorityInterceptor"></bean>
+            <bean  class="com.tj.controller.common.intercepter.BackendInterceptor"></bean>
         </mvc:interceptor>
-    </mvc:interceptors>-->
+        <mvc:interceptor>
+            <!--/portal/product
+               前台拦截器
+            -->
+            <mvc:mapping path="/portal/**"/>
+            <mvc:exclude-mapping path="/portal/order/alipay_callback.do" />
+            <mvc:exclude-mapping path="/portal/product/**" />
+            <mvc:exclude-mapping path="/portal/user/login.do"/>
+            <mvc:exclude-mapping path="/portal/user/register.do"/>
+            <mvc:exclude-mapping path="/portal/user/forget_get_question.do"/>
+            <mvc:exclude-mapping path="/portal/user/forget_check_answer.do"/>
+            <mvc:exclude-mapping path="/portal/user/forget_reset_password.do"/>
+            <mvc:exclude-mapping path="/portal/user/check_valid.do"/>
+            <mvc:exclude-mapping path="/portal/user/logout.do"/>
+            <bean  class="com.tj.controller.common.intercepter.PostalInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 
 </beans>

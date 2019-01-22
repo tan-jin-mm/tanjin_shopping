@@ -142,5 +142,16 @@
   <update id="updateUserPassword" parameterType="map">
     update tj_users set password=#{passwordNew},update_time=now() where username=#{username}
   </update>
+  <!--
+      根据token查询用户信息
+  -->
+  <select id="findUserInforByToken" parameterType="String" resultMap="BaseResultMap">
+    select id, username, password, email, phone, question, answer, role, create_time, update_time
+    from tj_users
+    where token=#{token}
+  </select>
+  <update id="updateTokenByUserId" parameterType="map">
+    update tj_users set token=#{token} where id=#{userId}
+  </update>
 
 </mapper>

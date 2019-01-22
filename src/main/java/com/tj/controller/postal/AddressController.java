@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.Serializable;
 
 @RestController
-@RequestMapping(value = "/shipping")
+@RequestMapping(value = "/portal/shipping")
 public class AddressController {
     @Autowired
     private IAddressService iAddressService;

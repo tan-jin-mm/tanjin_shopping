@@ -5,6 +5,8 @@ public class Const {
     public static final int RESPONSECODE_SUCCESS=0;
     //失败状态码
     public static final int RESPONSECODE_ERROR=100;
+    //登录token
+    public static final String AUTOLOGINTOKEN = "autoLoginToken";
 
     //支付宝回调成功
     public static final String TRADE_SUCCESS = "TRADE_SUCCESS";
